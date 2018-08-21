@@ -8,10 +8,4 @@ buildInfo:
 stages:
   verify:
     unit:
-      - ant -file build.xml \
-        -Dsf.username="${sf_username}" \
-        -Dsf.serverurl="${sf_serverurl}" \
-        -Dsf.password="${sf_password_sandbox}" \
-        -DBRANCH_NAME="${BRANCH_NAME}" \
-        -Dsf.maxPoll=80 \
-        "${ANT_TARGETS}"
+      - ant -file build.xml -Dsf.username="${sf_username}" -Dsf.serverurl="${sf_serverurl}" -Dsf.password="${sf_password_sandbox}" -DBRANCH_NAME="${BRANCH_NAME}" -Dsf.maxPoll=80 "${ANT_TARGETS}"
