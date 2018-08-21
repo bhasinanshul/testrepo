@@ -9,9 +9,9 @@ stages:
   verify:
     unit:
       - ant -file build.xml \
-        -Dsf.username="${sf.username}" \
-        -Dsf.serverurl="${sf.serverurl}" \
-        -Dsf.password="${sf.password.sandbox}" \
+        -Dsf.username="${sf_username}" \
+        -Dsf.serverurl="${sf_serverurl}" \
+        -Dsf.password="${sf_password_sandbox}" \
         -DBRANCH_NAME="${BRANCH_NAME}" \
         -Dsf.maxPoll=80 \
         "${ANT_TARGETS}"
