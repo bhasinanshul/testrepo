@@ -8,7 +8,6 @@ buildInfo:
 stages:
   verify:
     unit:
-      - echo "${sf.serverurl}"
       - ant -file build.xml \
         -Dsf.username="${sf.username}" \
         -Dsf.serverurl="${sf.serverurl}" \
