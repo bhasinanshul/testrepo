@@ -1,0 +1,11 @@
+version: "1.0"
+
+image: docker.8x8.com:5000/8x8/centos-7-java:hyperloop
+
+buildInfo:
+  buildName: SFDC
+
+stages:
+  verify:
+    unit:
+      - ant clean
