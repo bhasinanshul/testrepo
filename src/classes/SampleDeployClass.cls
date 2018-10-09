@@ -11,6 +11,7 @@ public class SampleDeployClass {
 	//Anshul merge
 	//Anshul changes2
 	//Anshul changes 3
+	//Anshul changes 4
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
