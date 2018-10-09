@@ -9,6 +9,7 @@ public class SampleDeployClass {
 		// Vinod : My comment
         // Check that the trigger properly set the phone field:
 	//Anshul merge
+	//Anshul changes2
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
