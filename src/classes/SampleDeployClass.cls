@@ -13,7 +13,7 @@ public class SampleDeployClass {
 	//Anshul changes 3
 	//Anshul changes 4
 	//Anshul automation
-	//Anshul merge1
+	//Anshul merge2
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
