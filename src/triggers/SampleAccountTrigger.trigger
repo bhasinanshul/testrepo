@@ -3,4 +3,4 @@ trigger SampleAccountTrigger on Account bulk (before insert) {
         Account acct = System.Trigger.new[i];
         acct.phone = SampleDeployClass.getPhone();
     }
-}//Anshul cherry pick3
+}//Anshul cherry pick4
