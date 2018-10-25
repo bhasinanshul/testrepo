@@ -6,7 +6,7 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>SampleAccountTrigger</members>
+        <members>*</members>
         <name>ApexTrigger</name>
     </types>
     <version>43.0</version>

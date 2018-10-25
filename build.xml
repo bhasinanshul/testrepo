@@ -13,7 +13,7 @@
 
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
-            <pathelement location="/usr/share/ant/lib/ant-salesforce.jar" />        	
+            <pathelement location="/Users/abhasin/Documents/salesforceant/ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
 	
@@ -80,7 +80,7 @@
     <!-- Shows retrieving code; only succeeds if done after deployCode -->
     <target name="retrieveCode">
       <!-- Retrieve the contents listed in the file codepkg/package.xml into the codepkg directory -->
-      <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="testing" unpackaged="src/package.xml" pollWaitMillis="40000"/>
+      <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieve" unpackaged="src/package.xml" pollWaitMillis="40000"/>
     </target>
 
     <!-- Shows deploying code, running all tests, and running tests (1 of which fails), and logging. -->
