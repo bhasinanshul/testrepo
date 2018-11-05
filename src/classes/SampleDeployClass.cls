@@ -10,7 +10,7 @@ public class SampleDeployClass {
         // Check that the trigger properly set the phone field:
 	//Anshul comment 
 //Anshul cherypick1
-//Anshul automation 22222
+//Anshul automation 222225
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
