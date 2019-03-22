@@ -16,6 +16,7 @@ public class SampleDeployClass {
 //branch2 line3
 //branch2 line4
 //branch2 line5
+//branch3 line6
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
