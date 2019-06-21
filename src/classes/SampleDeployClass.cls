@@ -15,6 +15,7 @@ public class SampleDeployClass {
 	//Anshul automation
 	//Anshul merge2
 	//Anshul merge345
+	//Anshul push to github
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
