@@ -16,6 +16,7 @@ public class SampleDeployClass {
 	//Anshul merge2
 	//Anshul merge345
 	//Anshul push to github
+	//Anshul push to github less than a minute compare to previuos commit
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
