@@ -22,7 +22,7 @@ public class SampleDeployClass {
 //branch2 word3 word4
 //branch2 word5 word6
 //Jenkins 1234
-//Jenkins test
+//Jenkins tests
         Account retAcc = [select id, phone from Account where id=:acc.id][0];
         System.assertEquals(getPhone(), retAcc.phone);
     }
